@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 //Routes
 require("./routes/routes.js")(app);
 
-//Mongo Stuff
+//Initialize Mongo
 mongoose.Promise = Promise;
 if (process.env.MONGODB_URI){
   console.log("Using MongoDB URI: " + process.env.MONGODB_URI);
